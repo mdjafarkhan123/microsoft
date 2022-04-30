@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*?---------- Utilites ------*/
+.p-y {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+}
+
+.container {
+    max-width: calc(1600px + 10%);
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+.link-item {
+    color: #035594;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+button.btn-primary {
+    padding: 10px 27px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.959);
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+.card p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card button {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*!-------- Navbar -------*/
+
+header .container {
+    height: 54px;
+    align-items: center;
+    font-size: 13px;
+    gap: 30px;
+}
+
+header .logo img {
+    width: 108px;
+}
+
+header .container ul {
+    display: flex;
+    height: 100%;
+}
+
+header ul li {
+    display: inline-block;
+    align-self: baseline;
+}
+
+
+header ul a {
+    margin: 0 10px;
+    padding: 5px 2px;
+}
+
+header ul a:hover {
+    border-bottom: 2px solid black;
+}
+
+header .user-item {
+    margin-left: auto;
+}
+
+header .user-item ion-icon {
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+header .user-item li:first-child ion-icon {
+    font-size: 15px;
+}
+
+
+
+
+
+/*!------------ Hero Section design ---------------*/
+
+.hero .banner__message {
+    background-color: #0067b8;
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 11px 35px;
+}
+
+.hero ion-icon,
+.slider-2 ion-icon,
+.slider-3 ion-icon {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.slider {
+    height: 60vh;
+    padding: 100px;
+    align-items: center;
+    background: url(media/RE4RJ6W.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.slider article {
+    align-items: center;
+    gap: 10px;
+    width: 530px;
+}
+
+.slider article button {
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+/*!------------ Icon Section design ---------------*/
+
+section.icon .container {
+    text-align: center;
+
+}
+
+section.icon .container .ul {
+    display: inline-block;
+}
+
+
+.icon__list li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon__list li a {
+    display: block;
+    width: 184px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.icon__list li img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon__list li span {
+    display: block;
+    margin-left: 10px;
+    margin-top: 6px;
+    max-width: 125px;
+    line-height: 1.4;
+    text-decoration: underline;
+
+}
+
+
+
+/**------------ Card section one design_------------*/
+
+.card-one .container,
+.card-two .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    padding-top: 0;
+}
+
+
+
+
+
+/**---------Slider 2 ------------*/
+.slider-2 .slider {
+    height: 56vh;
+    background: url(media/slider-img.jpg) no-repeat center;
+}
+
+
+
+
+
+/*!---------- Card two section design -----------*/
+.card-two .container {
+    padding-top: 50px;
+}
+
+.card-two .container .tag {
+    color: rgb(2, 2, 2);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 13px;
+    background-color: #FFD800;
+    margin-bottom: 1px;
+    display: inline-block;
+}
+
+.card-two .container .title {
+    grid-column: 1 / span 4;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.card-two .card:first-of-type img {
+    margin-bottom: 2px;
+}
+
+
+
+
+/**---------Slider 2 ------------*/
+.slider-3 .slider {
+    height: 56vh;
+    background: url(media/slider\ image\ 3.webp) no-repeat center;
+}
+
+
+
+
+/**---------Social Icon section design ------------*/
+section.social-icon>.flex {
+    gap: 30px;
+    align-items: center;
+}
+
+section.social-icon ul {
+    gap: 10px;
+}
+
+section.social-icon ion-icon {
+    vertical-align: middle;
+    font-size: 30px;
+}
