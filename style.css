@@ -100,6 +100,7 @@ button.btn-primary {
 .card p {
     font-size: 15px;
     font-weight: 400;
+    margin-top: 5px;
 }
 
 .card button {
@@ -186,7 +187,7 @@ header .user-item li:first-child ion-icon {
     padding: 100px;
     align-items: center;
     background: url(media/RE4RJ6W.jpg) no-repeat center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .slider article {
@@ -321,4 +322,140 @@ section.social-icon ul {
 section.social-icon ion-icon {
     vertical-align: middle;
     font-size: 30px;
+}
+
+
+/*!---------- Footer ------------*/
+footer {
+    background-color: #F2F2F2;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+footer .container {
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 20px;
+}
+
+footer .container h4 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+footer .container ul li {
+    padding: 8px 0;
+}
+
+footer .container ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .bottom-area {
+    grid-column: 1 / 7;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+footer .bottom-area>a ion-icon {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+footer .bottom-area ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+
+
+/*!----------- FOR MOBILE DEVICES--------*/
+@media (min-width: 1025px) and (max-width: 1108px) {
+    header .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    header .menu,
+    header .user-item {
+        display: none;
+    }
+
+
+    /**---- Slider -----*/
+    .slider,
+    .slider-3 .slider,
+    .slider-2 .slider {
+        background-size: cover;
+        background-position: center;
+        height: 37vh;
+    }
+
+    .slider article {
+        display: none;
+    }
+
+
+    /**-------- Icon section------*/
+    .icon__list li a {
+        width: 140px;
+        padding: 0 0 20px 0;
+    }
+
+
+    /**-------- Card------*/
+    .card-one .container,
+    .card-two .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+    }
+
+
+    .card-two .container .title {
+        grid-column: 1 /span 2;
+
+    }
+
+
+    /*?-------- Footer -----*/
+    footer .container {
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 20px;
+        gap: 5px;
+    }
+
+    footer .bottom-area {
+        grid-column: 1 / 4;
+    }
+
+    footer .bottom-area ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    footer .bottom-area ul li:nth-child(1),
+    footer .bottom-area ul li:nth-child(6) {
+        display: none;
+    }
 }
