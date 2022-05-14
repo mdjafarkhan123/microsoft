@@ -432,8 +432,7 @@ footer .bottom-area ul {
 
 
     .card-two .container .title {
-        grid-column: 1 /span 2;
-
+        grid-column: span 2;
     }
 
 
@@ -457,5 +456,27 @@ footer .bottom-area ul {
     footer .bottom-area ul li:nth-child(1),
     footer .bottom-area ul li:nth-child(6) {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .card-one .container,
+    .card-two .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-two .container .title {
+        grid-column: span 1;
+    }
+
+    footer .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer .bottom-area {
+        grid-column: 1 / 3;
+        padding-top: 5px;
     }
 }
