@@ -140,6 +140,7 @@ header ul li {
 header ul a {
     margin: 0 10px;
     padding: 5px 2px;
+    line-height: 1;
 }
 
 header ul a:hover {
@@ -207,8 +208,6 @@ header .user-item li:first-child ion-icon {
 .slider article button {
     margin-top: 8px;
 }
-
-
 
 
 
