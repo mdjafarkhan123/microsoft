@@ -180,6 +180,14 @@ header .user-item li:first-child ion-icon {
 .slider-3 ion-icon {
     vertical-align: middle;
     font-size: 16px;
+    transition: 0.3s ease all;
+    margin-left: 3px;
+}
+
+.slider button:hover ion-icon,
+.slider-2 button:hover ion-icon,
+.slider-3 button:hover ion-icon {
+    margin-left: 10px;
 }
 
 .slider {
